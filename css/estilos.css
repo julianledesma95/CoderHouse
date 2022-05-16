@@ -101,6 +101,11 @@ li:hover {
   float: left;
 }
 
+.btn:hover {
+  left: 20px;
+  background-color: #d9fcff;
+  transform: scale(1.1)
+}
 
 @media (max-width:980px){
   #texto{
@@ -214,6 +219,10 @@ li:hover {
 #productos-columna img{
   width: 150px;
   height: 150px;
+}
+
+#productos-columna:hover{
+  transform: scale(1.1);
 }
 
 @media (max-width: 980px){
