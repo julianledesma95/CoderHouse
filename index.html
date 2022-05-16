@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img\imagen gota.png">
+    <title>Desafío 1: Wireframe y estructura del proyecto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body class="body">
+    <div class="container">
+        <header class="header" id="header">
+            <a href="index.html" class="logo">
+                <img src="img\logo2.jpg" alt="logo" class="logo-img">
+            </a>
+            <h1 class="titulo">
+                Distribuidora Ledesma
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#main" class="nav.link"> Inicio </a>
+                    </li>
+                    <li>
+                        <a href="#nosotros"  class="nav.link"> Nosotros </a>
+                    </li>
+                    <li>
+                        <a href="#productos"  class="nav.link"> Productos </a>
+                    </li>
+                    <li>
+                        <a href="#contacto"  class="nav.link"> Contacto </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="portada" id="portada">
+            <div id="texto">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, neque. Sequi voluptatibus saepe veritatis pariatur!</p>
+                <button class="btn">
+                    <a href="#contacto"  class="nav.link"> Contactanos! </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="nosotros" id="nosotros">
+            <div id="contenido">
+                <div>
+                    <h2>Nosotros</h2>
+                </div>
+                <!-- Apartado izquierdo, foto + descripción -->
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8xOPDUVmdD4?start=10" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis neque facere, accusantium pariatur, id dicta deserunt, libero porro veritatis sit perspiciatis? Eos veniam optio delectus, facere veritatis exercitationem ex pariatur iure vero dolorum vitae suscipit, qui ea neque natus!</p>
+                </div>
+            </div>
+            <div id="description-row">
+                <div>
+                    <h3>Distribudora Ledesma, Calidad en Agua y Soda</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="nosotros2">
+                    <!-- Apartado inferior, 3 íconos + descripción-->
+            <div id="valores"> 
+                <div id="description-box">
+                    <img src="img\icon01.png" alt="icon01" id="icon">
+                    <h4>+ de 25 años de experiencia</h4>
+                </div>
+                <div id="description-box">
+                    <img src="img\icon02.png" alt="icon02" id="icon">
+                    <h4>Envíos a domicilio</h4>
+                </div>
+                <div id="description-box">
+                    <img src="img\icon03.png" alt="icon03" id="icon">
+                    <h4>Atención personalizada</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="productos" id="productos">
+                        <!-- Inicio de Sección "Nuestra Oferta de Productos" -->
+            <div id="titulo-productos">
+                <h2>Nuestra oferta de productos</h2>
+            </div>
+            <br>
+            <div>
+                <div id="productos-fila"> <!-- ROW 1 -->
+                    <!-- Cada DIV siguiente es una columna -->
+                    <div id="productos-columna">
+                        <img src="img/bidon_6lts.jpg" alt="ejemplo">
+                        <h4>Bidon Agua 6Lts Descartable</h4>
+                        <p>Precio: $120</p>
+                    </div>
+                    <div id="productos-columna">
+                        <img src="img/bidon_12lts.jpg" alt="ejemplo">
+                        <h4>Bidon Agua 12Lts Retornable</h4>
+                        <p>Precio: $200</p>
+                    </div>
+                    <div id="productos-columna">
+                        <img src="img/bidon_20lts3.jpg" alt="ejemplo">
+                        <h4>Bidon Agua 20Lts Retornable</h4>
+                        <p>Precio: $300</p>
+                    </div>
+                </div>
+
+                <div id="productos-fila"> <!-- ROW 2 -->
+                    <!-- Cada DIV siguiente es una columna -->
+                    <div id="productos-columna">
+                        <img src="img/soda.jpg" alt="ejemplo">
+                        <h4>Pack 6 Sifones Soda</h4>
+                        <p>Retornable. Precio: $140</p>
+                    </div>
+                    <div id="productos-columna">
+                        <img src="img/botellaagua_x6.jpg" alt="ejemplo">
+                        <h4>Pack 6 Botellas de agua descartable</h4>
+                        <p>Descartable. Precio: $180</p>
+                    </div>
+                    <div id="productos-columna">
+                        <img src="img/maquina.jpg" alt="ejemplo">
+                        <h4>Alquiler Maquina Agua Frio/Calor por MES + 4 bidones 20Lts</h4>
+                        <p>Alquielr Mensual. Precio: $2500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacto" id="contacto">
+            <form>
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido"><br><br>
+                    <label for="dirección">Dirección:</label>
+                    <input type="text" id="dirección"><br><br>
+                    <label for="localidad">Barrio/Localidad:</label>
+                    <select name="localidad" id="localidad" value="localidad">
+                        <option value="000">Seleccionar</option>
+                        <option value="001">Agronomía</option>
+                        <option value="002">Almagro</option>
+                        <option value="003">Balvanera</option>
+                        <option value="004">Barracas</option>
+                        <option value="005">Belgrano</option>
+                        <option value="006">Boedo</option>
+                        <option value="007">Caballito</option>
+                        <option value="008">Chacarita</option>
+                        <option value="009">Coghlan</option>
+                        <option value="010">Colegiales</option>
+                        <option value="011">Constitución</option>
+                        <option value="012">Flores</option>
+                        <option value="013">Floresta</option>
+                        <option value="014">La Boca</option>
+                        <option value="015">La Paternal</option>
+                        <option value="016">Liniers</option>
+                        <option value="017">Mataderos</option>
+                        <option value="018">Monte Castro</option>
+                        <option value="019">Monserrat (originalmente llamado Montserrat).</option>
+                        <option value="020">Nueva Pompeya</option>
+                        <option value="021">Núñez</option>
+                        <option value="022">Palermo</option>
+                        <option value="023">Parque Avellaneda</option>
+                        <option value="024">Parque Chacabuco</option>
+                        <option value="025">Parque Chas</option>
+                        <option value="026">Parque Patricios</option>
+                        <option value="027">Puerto Madero</option>
+                        <option value="028">Recoleta</option>
+                        <option value="029">Retiro</option>
+                        <option value="030">Saavedra</option>
+                        <option value="031">San Cristóbal</option>
+                        <option value="032">San Nicolás</option>
+                        <option value="033">San Telmo</option>
+                        <option value="034">Vélez Sársfield</option>
+                        <option value="035">Versalles</option>
+                        <option value="036">Villa Crespo</option>
+                        <option value="037">Villa del Parque</option>
+                        <option value="038">Villa Devoto</option>
+                        <option value="039">Villa General Mitre</option>
+                        <option value="040">Villa Lugano</option>
+                        <option value="041">Villa Luro</option>
+                        <option value="042">Villa Ortúzar</option>
+                        <option value="043">Villa Pueyrredón</option>
+                        <option value="044">Villa Real</option>
+                        <option value="045">Villa Riachuelo</option>
+                        <option value="046">Villa Santa Rita</option>
+                        <option value="047">Villa Soldati</option>
+                        <option value="048">Villa Urquiza</option>
+                    </select>           
+                    <br><br>
+                    <label for="mensaje">Mensaje:</label> <br>
+                    <textarea cols="40" rows="5" id="mensaje" name="mensaje"> </textarea><br>
+                    <br>
+                    Producto de Interés:
+                    <select name="producto" id="producto" value="producto">
+                        <option value="000">Seleccionar</option>
+                        <option value="001">Bidon Agua 6Lts Descartable</option>
+                        <option value="002">Bidon Agua 12Lts</option>
+                        <option value="003">Bidon Agua 20Lts</option>
+                        <option value="004">Pack 6 Sifones Soda</option>
+                        <option value="005">Pack 6 Botellas de agua descartable</option>
+                        <option value="006">Alquiler Maquina Agua Frio/Calor por MES + 4 bidones 20Lts</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="contacto2">
+            <div id="zona">
+                <div id="zonatit">
+                    <h3>Zona de entrega a domicilio</h3>
+                </div>
+            </div>
+            <div id="barrios">
+                <p>         
+                    Agronomía,
+                    Almagro,
+                    Balvanera,
+                    Barracas,
+                    Belgrano,
+                    Boedo,
+                    Caballito,
+                    Chacarita,
+                    Coghlan,
+                    Colegiales,
+                    Constitución,
+                    Flores,
+                    Floresta,
+                    La Boca,
+                    La Paternal,
+                    Liniers,
+                    Mataderos,
+                    Monte Castro,
+                    Monserrat (originalmente llamado Montserrat).,
+                    Nueva Pompeya,
+                    Núñez,
+                    Palermo,
+                    Parque Avellaneda,
+                    Parque Chacabuco,
+                    Parque Chas,
+                    Parque Patricios,
+                    Puerto Madero,
+                    Recoleta,
+                    Retiro,
+                    Saavedra,
+                    San Cristóbal,
+                    San Nicolás,
+                    San Telmo,
+                    Vélez Sársfield,
+                    Versalles,
+                    Villa Crespo,
+                    Villa del Parque,
+                    Villa Devoto,
+                    Villa General Mitre,
+                    Villa Lugano,
+                    Villa Luro,
+                    Villa Ortúzar,
+                    Villa Pueyrredón,
+                    Villa Real,
+                    Villa Riachuelo,
+                    Villa Santa Rita,
+                    Villa Soldati,
+                    Villa Urquiza.
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="logo">
+                <img src="img\logo2.jpg" alt="logo" class="logo-img">
+            </div>
+            <div id="redesfooter">
+                <h3>REDES SOCIALES</h3> 
+            </div>
+            <div id="contactofooter">
+                <h3>INFORMACIÓN DE CONTACTO</h3>
+            </div>
+            <div id="mapafooter">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52571.73953870067!2d-58.492809616437114!3d-34.56029679999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb680daf6c9cf%3A0xca160d33b0ce5321!2sEmbotelladora%20Agua%20y%20Soda%20Cimes!5e0!3m2!1ses-419!2sar!4v1649630612918!5m2!1ses-419!2sar" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+
+    </div>
+</body>
