@@ -95,9 +95,6 @@ li:hover {
   }
 }
 
-@media (max-width: 380px) {
-
-}
 /* Comienzo de Contenido Nosotros <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .nosotros {
   grid-area: nosotros;
@@ -260,6 +257,10 @@ li:hover {
     max-width: 300px;
     margin: 20px;
   }
+
+  #productos-columna img {
+    margin-top: 8px;
+  }
 }
 /* Comienzo de Sección Contacto <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .contacto {
@@ -354,11 +355,15 @@ li:hover {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
+#redes img {
+  width: 50px;
+  padding: 2px;
+  cursor: pointer;
+}
+
 @media (max-width: 980px) {
-  .redesfooter {
-    font-size: small;
-  }
-  .contactofooter {
-    font-size: small;
+  #redes img {
+    width: 25px;
+    padding: 1px;
   }
 }
